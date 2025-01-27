@@ -29,7 +29,6 @@ public class JsonSchemaBuilder {
         Xmap root = Xmap.q();
         root.k("$schema", "http://json-schema.org/draft-04/schema#")
                 .k("title", scimSchema.getName())
-                .k("description", scimSchema.getDescription())
                 .k("type", "object")
                 .k("additionalItems", false)
         ;
@@ -50,7 +49,6 @@ public class JsonSchemaBuilder {
         Xmap wrapper = Xmap.q();
         wrapper.k("$schema", "http://json-schema.org/draft-04/schema#")
                 .k("title", scimSchema.getName())
-                .k("description", scimSchema.getDescription())
                 .k("type", "object")
                 .k("additionalItems", false)
         ;
